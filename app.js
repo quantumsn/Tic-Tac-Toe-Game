@@ -24,9 +24,11 @@ boxes.forEach((box) => {
   box.addEventListener("click", () => {
     count++;
     if (turnO) {
+      box.classList.remove("color");
       box.innerText = "O";
       turnO = false;
     } else {
+      box.classList.add("color");
       box.innerText = "X";
       turnO = true;
     }
@@ -40,9 +42,11 @@ boxes.forEach((box) => {
 
 const gameDraw = (count) => {
   if (count == 9 && winner == false) {
-    msg.innerText = `Game was a Draw.`;
-    msgContainer.classList.remove("hide");
-    gameBar.classList.add("hide");
+    setTimeout(()=> {
+      msg.innerText = `Game was a Draw.`;
+      msgContainer.classList.remove("hide");
+      gameBar.classList.add("hide");
+    },1000);
   }
 };
 

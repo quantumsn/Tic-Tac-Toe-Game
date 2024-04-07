@@ -18,7 +18,7 @@ h1 {
 }
 
 .container {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,19 +49,20 @@ h1 {
 #reset-btn {
   height: 8vmin;
   width: 40vmin;
-  font-size: 1.2rem;
+  font-size: 4vmin;
   background-color: #2f7500;
   color: #fff;
   border-radius: 1rem;
   border: none;
   font-family: inherit;
   word-spacing: 4px;
+  margin-top: 1vmin;
 }
 
 #new-game-btn {
   height: 8vmin;
   width: 40vmin;
-  font-size: 1.2rem;
+  font-size: 4vmin;
   background-color: #2f7500;
   color: #fff;
   border-radius: 1rem;
